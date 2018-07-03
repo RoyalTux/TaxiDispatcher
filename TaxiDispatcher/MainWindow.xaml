@@ -1,0 +1,52 @@
+﻿<Window x:Class="TaxiDispatcher.MainWindow"
+        Icon="C:\Users\Дмитрий\source\repos\TaxiDispatcher\TaxiDispatcher\Images\ico.png"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TaxiDispatcher"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal" 
+        TextOptions.TextRenderingMode="Auto"       
+        
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        mc:Ignorable="d"
+        Title="Такси" Height="416.874" Width="890.991" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.DeepPurple.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Window.Background>
+        <ImageBrush ImageSource="C:\Users\Дмитрий\source\repos\TaxiDispatcher\TaxiDispatcher\Images\background.JPG" Stretch="UniformToFill" TileMode="None" />
+    </Window.Background>
+
+    <Grid>
+        <Label Foreground="LightCoral" FontSize="25" FontWeight="Bold" Margin="10,10,501.8,329.2">Вход для диспетчеров такси:</Label>
+        <Label Foreground="Wheat" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center" Margin="10,179,421.8,147.2" Width="453" >Отслеживание статуса заказа:</Label>
+        <Label Foreground="LightCoral" FontStyle="Italic" FontSize="20" FontWeight="Bold" Margin="18,48,787.8,294.2">логин:</Label>
+        <Label Foreground="LightCoral" FontStyle="Italic" FontSize="20" FontWeight="Bold" Margin="10,95,772.8,245.2">пароль:</Label>
+        <TextBox x:Name="TextBox_Login" Background="LightYellow" FontSize="14" FontWeight="Bold" TextAlignment="Center" Foreground="DarkViolet" Margin="102,54,521.8,300.2" ToolTip="Введите логин"/>
+        <PasswordBox x:Name="PasswordBox" Background="LightYellow" FontSize="14" HorizontalContentAlignment="Center" Foreground="DarkViolet" Margin="102,101,521.8,253.2" ToolTip="Введите пароль"></PasswordBox>
+        <TextBox x:Name="TextBox_OrderStatus"  Background="LightYellow" FontSize="14" FontWeight="Bold" TextAlignment="Center" Foreground="DarkViolet" ToolTip="Введите номер заказа такси" Margin="18,229,437.8,125.2"/>
+        <Image ToolTip="Приятной Вам поездки! :)" Source="C:\Users\Дмитрий\source\repos\TaxiDispatcher\TaxiDispatcher\Images\luck.png" Margin="553,28,-17.2,168.2"></Image>
+        <Image Source="C:\Users\Дмитрий\source\repos\TaxiDispatcher\TaxiDispatcher\Images\ico.png" Margin="18,134,798.8,208.2" RenderTransformOrigin="1.077,0.268"></Image>
+
+        <Button x:Name="Button_DispatcherEnter" ToolTip="Нажмите, для входа в систему управления такси" Margin="102,142,521.8,208.2" Height="Auto">Войти</Button>
+        <Button x:Name="Button_ShowOrderStatus" ToolTip="Нажмите, чтобы посмотреть статус Вашего заказа" Foreground="AliceBlue" Margin="459,229,304.8,125.2" Height="Auto" Click="Button_ShowOrderStatus_Click">Посмотреть</Button>
+        <Button x:Name="Button_Order" FontSize="50" ToolTip="Нажмите, чтобы сделать заказ такси :)" Foreground="LightGreen" Margin="10,291,304.8,22.2" Height="Auto">Заказать такси</Button>
+
+    </Grid>
+</Window>
+
+<!--Background="{DynamicResource MaterialDesignPaper}"-->
