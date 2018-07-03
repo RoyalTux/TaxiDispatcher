@@ -38,12 +38,12 @@
         <Label Foreground="LightCoral" FontStyle="Italic" FontSize="20" FontWeight="Bold" Margin="10,95,772.8,245.2">пароль:</Label>
         <TextBox x:Name="TextBox_Login" Background="LightYellow" FontSize="14" FontWeight="Bold" TextAlignment="Center" Foreground="DarkViolet" Margin="102,54,521.8,300.2" ToolTip="Введите логин"/>
         <PasswordBox x:Name="PasswordBox" Background="LightYellow" FontSize="14" HorizontalContentAlignment="Center" Foreground="DarkViolet" Margin="102,101,521.8,253.2" ToolTip="Введите пароль"></PasswordBox>
-        <TextBox x:Name="TextBox_OrderStatus"  Background="LightYellow" FontSize="14" FontWeight="Bold" TextAlignment="Center" Foreground="DarkViolet" ToolTip="Введите номер заказа такси" Margin="18,229,437.8,125.2"/>
+        <TextBox x:Name="TextBox_OrderStatus" TextChanged="TextBox_OrderStatus_TextChanged"  Background="LightYellow" FontSize="14" FontWeight="Bold" TextAlignment="Center" Foreground="DarkViolet" ToolTip="Введите номер заказа такси" Margin="18,229,437.8,125.2"/>
         <Image ToolTip="Приятной Вам поездки! :)" Source="C:\Users\Дмитрий\source\repos\TaxiDispatcher\TaxiDispatcher\Images\luck.png" Margin="553,28,-17.2,168.2"></Image>
         <Image Source="C:\Users\Дмитрий\source\repos\TaxiDispatcher\TaxiDispatcher\Images\ico.png" Margin="18,134,798.8,208.2" RenderTransformOrigin="1.077,0.268"></Image>
 
         <Button x:Name="Button_DispatcherEnter" ToolTip="Нажмите, для входа в систему управления такси" Margin="102,142,521.8,208.2" Height="Auto">Войти</Button>
-        <Button x:Name="Button_ShowOrderStatus" ToolTip="Нажмите, чтобы посмотреть статус Вашего заказа" Foreground="AliceBlue" Margin="459,229,304.8,125.2" Height="Auto" Click="Button_ShowOrderStatus_Click">Посмотреть</Button>
+        <Button x:Name="Button_ShowOrderStatus" IsEnabled="False" ToolTip="Нажмите, чтобы посмотреть статус Вашего заказа" Foreground="AliceBlue" Margin="459,229,304.8,125.2" Height="Auto" Click="Button_ShowOrderStatus_Click">Посмотреть</Button>
         <Button x:Name="Button_Order" FontSize="50" ToolTip="Нажмите, чтобы сделать заказ такси :)" Foreground="LightGreen" Margin="10,291,304.8,22.2" Height="Auto">Заказать такси</Button>
 
     </Grid>

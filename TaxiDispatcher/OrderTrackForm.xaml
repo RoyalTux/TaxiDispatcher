@@ -21,5 +21,9 @@
         <Label Foreground="Wheat"  FontSize="15" FontWeight="Bold" Grid.Row="0" Margin="18,10,150.6,9.8" >Номер заказа:</Label>
         <Label Foreground="Wheat" FontSize="15" FontWeight="Bold" Grid.Row="1" Margin="18,11.2,170.6,9.6" >Статус:</Label>
         <Label Foreground="Wheat" FontSize="15" FontWeight="Bold" Grid.Row="2" Margin="18,10.4,181.6,11.4" >Машина:</Label>
+
+        <Label x:Name="LabelNumberOrder" Foreground="LightSalmon"  FontSize="15" FontWeight="Bold" Grid.Row="0" Margin="156,10,9.6,9.8" >нет данных</Label>
+        <Label x:Name="LabelOrderStatus" Foreground="LightSalmon" FontSize="15" FontWeight="Bold" Grid.Row="1" Margin="156,11.2,9.6,9.6"  >нет данных</Label>
+        <Label x:Name="LabelCarData" Foreground="LightSalmon" FontSize="15" FontWeight="Bold" Grid.Row="2" Margin="156,10.4,9.6,9.4"  >нет данных</Label>
     </Grid>
 </Window>
